@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ## ./scripts/update.sh
 ## Update everything.
 
