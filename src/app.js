@@ -4,7 +4,7 @@ const express = require('express');
 
 // Create shutdown function
 function shutdown() {
-    exec('shutdown now');
+    exec('sudo shutdown now');
 }
 
 const app = express();
