@@ -8,7 +8,6 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt autoremove -y
 
-
 # Install dependencies
 sudo apt remove -y nodejs
 sudo apt remove -y npm
