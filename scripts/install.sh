@@ -10,8 +10,9 @@ sudo apt autoremove -y
 
 
 # Install dependencies
-sudo apt remove nodejs npm
-sudo apt install -y nodejs npm
+sudo apt remove -y nodejs
+sudo apt remove -y npm
+sudo apt install -y nodejs
 
 git config --global user.email "pi@example.com"
 get config --global user.name "Raspberry Pi"
