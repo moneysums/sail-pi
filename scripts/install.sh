@@ -1,10 +1,10 @@
 ## ./scripts/install.sh
 
-$BRANCH = "master"
+$BRANCH="master"
 
 ## Set the branch if necessary.
 if [ "$0" != "" ]; then
-    $BRANCH = $0
+    $BRANCH=$0
 fi
 
 git fetch origin $BRANCH
