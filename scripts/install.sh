@@ -1,5 +1,13 @@
 ## ./scripts/install.sh
 
+# Update packages.
+sudo apt update
+sudo apt upgrade -y
+sudo apt autoremove -y
+
+# Install dependencies
+sudo apt install -y nodejs npm
+
 BRANCH="master"
 
 ## Set the branch if necessary.
@@ -10,5 +18,4 @@ fi
 git fetch origin $BRANCH
 git checkout $BRANCH
 
-## Now update from the current branch.
-bash ./scripts/update.sh
+npm i
