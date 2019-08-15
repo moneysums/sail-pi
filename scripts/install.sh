@@ -1,7 +1,8 @@
 ## ./scripts/install.sh
 
 # Add up-to-date nodejs repo.
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x
+sudo -E bash -
 
 # Update packages.
 sudo apt update
