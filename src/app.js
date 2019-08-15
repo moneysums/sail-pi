@@ -29,7 +29,7 @@ app.get('/shutdown', (req, res) => {
 
 app.get('/update', (req, res) => {
   update();
-  res.send(`Updating ${links}`);
+  res.send(`Updating now ${links}`);
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
