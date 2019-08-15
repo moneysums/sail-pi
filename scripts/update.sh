@@ -9,4 +9,4 @@ sudo apt autoremove -y
 # Pull the latest repo.
 git pull
 
-npm i
+npm ci
