@@ -3,8 +3,8 @@
 BRANCH="master"
 
 ## Set the branch if necessary.
-if [ "$0" != "" ]; then
-    BRANCH="$0"
+if [ "$1" != "" ]; then
+    BRANCH="$1"
 fi
 
 git fetch origin $BRANCH
