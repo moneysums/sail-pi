@@ -1,6 +1,6 @@
 # sail-pi
 
-Sailing timer for the Raspberry Pi
+Sailing timer for the Raspberry Pi.
 
 ## Getting started
 
@@ -9,17 +9,20 @@ You need a working Raspberry Pi running Raspbian (tested with Buster) with the f
   required and will slow down updates)
 * working internet connection
 * HDMI display
-* mouse
+* mouse (or touch-sensitive display)
 * terminal connection through a keyboard or SSH (only required for installing sail-pi)
 
-Open a terminal on the Pi.
+Open a terminal on the Pi and install sail-pi.
 
 ```bash
 git clone https://github.com/moneysums/sail-pi.git
 cd sail-pi
-bash ./scripts/install.sh
+bash scripts/install.sh
 ```
 
+## Development
+
+To install a development branch on a Pi (e.g. `dev`) use
 ```bash
-bash ./scripts/install-dev.sh
+bash scripts/install.sh dev
 ```
