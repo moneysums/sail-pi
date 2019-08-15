@@ -1,0 +1,24 @@
+{
+  "name": "sail-pi",
+  "version": "0.1.0-dev",
+  "description": "Sailing timer for the Raspberry Pi.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pm2": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moneysums/sail-pi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moneysums/sail-pi/issues"
+  },
+  "homepage": "https://github.com/moneysums/sail-pi#readme"
+}
