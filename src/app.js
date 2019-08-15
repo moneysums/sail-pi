@@ -4,17 +4,32 @@ const express = require('express');
 
 // Create shutdown function
 function shutdown() {
-    exec('sudo shutdown now');
+  exec('sudo shutdown now');
+}
+
+// Create shutdown function
+function update() {
+  exec('bash ./scripts/update.sh');
 }
 
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => res.send('Hello World! <a href="/shutdown">Shut down</a>'));
+let links = '<li><a href="/">Home</a></li>';
+links += '<li><a href="/shutdown">Shut down</a></li>';
+links += '<li><a href="/update">Update</a></li>';
+links = `<ul>${links}</ul>`;
+
+app.get('/', (req, res) => res.send(`Hello World!${links}`));
 
 app.get('/shutdown', (req, res) => {
-  res.send('Shutting down');
-  shutdown();
+  setTimeout(shutdown, 5000);
+  res.send(`Shutting down in 5 seconds${links}`);
+});
+
+app.get('/update', (req, res) => {
+  update();
+  res.send(`Updating ${links}`);
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
