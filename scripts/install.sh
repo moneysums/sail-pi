@@ -4,4 +4,4 @@
 git fetch origin master
 git checkout master
 
-bash update.sh
+bash ./scripts/update.sh

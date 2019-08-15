@@ -4,4 +4,4 @@
 git fetch origin dev
 git checkout dev
 
-bash update.sh
+bash ./scripts/update.sh
